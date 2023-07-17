@@ -39,7 +39,7 @@ typedef void (*CallSCCMainFunc)(int, const wchar_t*, const wchar_t*, wchar_t*, i
 
 int main() {
     // 加载 DLL
-    HMODULE dllHandle = LoadLibrary(L"your_dll_name.dll");
+    HMODULE dllHandle = LoadLibrary(L"SCCdll.dll");
     if (dllHandle == nullptr) {
         std::cerr << "Failed to load DLL." << std::endl;
         return 1;
@@ -71,7 +71,7 @@ int main() {
     return 0;
 }
 ```
-请将示例代码中的 your_dll_name.dll 替换为你的 DLL 文件名，并根据你的实际情况修改输入参数和输出缓冲区的大小。确保输入参数和输出缓冲区的类型与你的 DLL 函数声明一致。
+请将示例代码中的 SCCdll.dll 替换为你的 DLL 文件名，并根据你的实际情况修改输入参数和输出缓冲区的大小。确保输入参数和输出缓冲区的类型与你的 DLL 函数声明一致。
 
 ## 注意事项
 
